@@ -1,0 +1,60 @@
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+// colors
+$ftc-gray: #CCC;
+$ftc-gray-darken: #4F4F4F;
+$ftc-blue: #0088cc;
+
+html {
+  .wizard-progress.wizard-progress-lg {
+    ul li.small-item {
+      a {
+        padding-top: 20px;
+        font-size: rem-calc(12);
+        span {
+          width: 30px;
+          height: 30px;
+          margin-top: -15px;
+          margin-left: -15px;
+          background-color: white;
+          line-height: 1;
+        }
+      }
+      .fa-check {
+        font-size: rem-calc(14);
+        color: $ftc-gray;
+        vertical-align: 3px;
+        text-indent: 2px;
+      }
+      &.active {
+        .fa-check {
+          color: $ftc-blue;
+        }
+      }
+    }
+  }
+}
+
+.input-group {
+  &.date {
+    .fa-calendar-alt {
+      font-size: rem-calc(22);
+    }
+    .input-group-addon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      text-align: center;
+      z-index: 5;
+      height: 100%;
+      line-height: 42px;
+    }
+    .form-control {
+      padding-left: 40px;
+    }
+  }
+}
