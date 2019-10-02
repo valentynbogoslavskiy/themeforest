@@ -1,0 +1,136 @@
+/* Add here all your CSS customizations */
+html .wizard-progress .wizard-steps li>span{
+	position: relative;
+	display: block;
+	padding: 25px 8px 0;
+	font-size: 11px;
+	color: #BDBDBD;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+	text-transform: capitalize;	
+}
+
+.card-header{
+	background: #E6F2DC;
+}
+
+.card-title{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 19px;
+	color: #4F4F4F;
+}
+
+.page-header h2 {
+    border-bottom-color: #82BE52;
+}
+
+ul.nav-main > li.nav-active > a {
+	-webkit-box-shadow: 2px 0 0 #F0F35F inset;
+	        box-shadow: 2px 0 0 #F0F35F inset;
+	background: #82BE52;
+	color:#000;
+}
+
+table{
+	font-size:14px;
+	font-family: Open Sans;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(230, 242, 220, 0.3);
+}
+
+.status-green, .status-orange, .status-red{
+	font-size: 10px;
+	color:#FFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding-left:6px;
+	padding-right:6px;
+	padding-bottom:2px;
+	padding-top:2px;
+}
+
+.status-green{
+	background-color: #27AE60;
+}
+
+.status-orange{
+	background-color: #F2994A;
+}
+
+.status-red{
+	background-color: #EB5757;
+}
+
+.timeline.timeline-simple .tm-body .tm-items > li:before {
+    background: #82BE52;
+    -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #82BE52;
+    box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #82BE52;
+}
+
+.changelog .release-date {
+    font-size: 18px;
+	color: #4F4F4F;
+	font-weight: bold;
+}
+
+.timeline .tm-items > li.past{
+	opacity: 0.5;
+}
+
+.timeline .tm-body{
+	padding:0;
+}
+
+html .wizard-progress .wizard-steps li.green-outline a span{
+    color: #82BE52;
+    border-color: #82BE52;
+    background-color: #FFFFFF;
+}
+
+html .wizard-progress .wizard-steps li.orange-outline a span{
+    color: #F2994A;
+    border-color: #F2994A;
+    background-color: #FFFFFF;
+}
+
+html .wizard-progress .wizard-steps li.orange-fill a span{
+    color: #FFFFFF;
+    border-color: #F2994A;
+    background-color: #F2994A;
+}
+
+html .wizard-progress .wizard-steps li.green-fill a span{
+    color: #FFFFFF;
+    border-color: #82BE52;
+    background-color: #82BE52;
+}
+
+html .wizard-progress .wizard-steps li.red-fill a span{
+    color: #FFFFFF;
+    border-color: #EB5757;
+    background-color: #EB5757;
+}
+
+.edit_treshold{
+    margin-left: 20px;
+}
+
+.icon-hover{
+    cursor: pointer;
+    color: #777;
+}
+
+.icon-hover:hover{
+    color: #000000;
+}
