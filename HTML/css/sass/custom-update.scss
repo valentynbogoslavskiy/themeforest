@@ -37,24 +37,3 @@ html {
     }
   }
 }
-
-.input-group {
-  &.date {
-    .fa-calendar-alt {
-      font-size: rem-calc(22);
-    }
-    .input-group-addon {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      text-align: center;
-      z-index: 5;
-      height: 100%;
-      line-height: 42px;
-    }
-    .form-control {
-      padding-left: 40px;
-    }
-  }
-}
