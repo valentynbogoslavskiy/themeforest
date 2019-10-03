@@ -23,6 +23,7 @@
 		<link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" />
 		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+		<link rel="stylesheet" href="vendor/dropzone/dropzone.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css" />
@@ -1138,8 +1139,8 @@
 					</div>
 
 					<div class="row">
-						<div class="col">
-							<section class="card mb-4">
+						<div class="col-lg-12">
+							<section class="card mb-2">
 								<div class="card-body">
 									<div class="row">
 										<div class="col-lg-8">
@@ -1157,9 +1158,7 @@
 								</div>
 							</section>
 						</div>
-					</div>
 
-					<div class="row">
 						<div class="col-lg-12">
 							<section class="card mb-4">
 								<header class="card-header">
@@ -1170,7 +1169,7 @@
 									<h2 class="card-title">Area 1 Activity 1</h2>
 								</header>
 								<div class="card-body">
-									<form class="form-horizontal form-bordered mb-5" method="get">
+									<form class="form-horizontal form-bordered mb-3" method="get">
 										<div class="form-group row">
 											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
 											<div class="col-lg-8">
@@ -1214,9 +1213,969 @@
 												<input type="text" value=""  class="form-control">
 											</div>
 										</div>
+										<div></div>
 									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
 								</div>
 							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 1 Activity 2</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 1 Activity 3</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12 mt-n4 mb-4">
+							<div class="card-footer text-center">
+								<button type="button" class="mb-3 mt-1 mr-1 btn btn-lg btn-primary">Add +</button>
+								<div class="row text-left mb-3">
+									<label class="col-lg-2 control-label text-lg-right pt-2">Total Cost Requested For Area 1:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+									<label class="col-lg-2 control-label text-lg-right pt-2">Threshold:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€00.00" class="form-control" readonly="readonly">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<section class="card mb-2">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-8">
+											<p class="mb-0 font-weight-bold">
+												Area 2: Maximising Player and Team Performance
+											</p>
+											<p>
+												The grant must be spread across a number of support areas and service providers and not concentrated
+												on one area only This investment could support activities, such as strength and conditioning
+												programmes, performance analysis (e.g.: video analysis and player statistics), performance
+												nutrition advice, fitness testing and development, athletic development, mobility training
+												and psychological preparation. These services must be administered by recognised, accredited personnel.
+												The maximum allocation to strength and conditioning is €1,600. Software for performance
+												analysis is not covered.
+											</p>
+											<p>
+												The maximum allocation to physiotherapy is €2,200. <br>
+												80% minimum of the total available grant will be allocated between Area 1 and 2.
+												The full 80% cannot be allocated to one area only
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 2 Activity 1</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 2 Activity 2</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 2 Activity 3</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12 mt-n4 mb-4">
+							<div class="card-footer text-center">
+								<button type="button" class="mb-3 mt-1 mr-1 btn btn-lg btn-primary">Add +</button>
+								<div class="row text-left mb-3">
+									<label class="col-lg-2 control-label text-lg-right pt-2">Total Cost Requested For Area 2:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+									<label class="col-lg-2 control-label text-lg-right pt-2">Threshold:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€00.00" class="form-control" readonly="readonly">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<section class="card mb-2">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-8">
+											<p class="mb-0 font-weight-bold">
+												Area 3: Access to Training Facilities
+											</p>
+											<p>
+												Investment could support access to specialist training facilities,
+												such as all weather, indoor and floodlit facilities, and gym use.
+											</p>
+											<p>
+												Maximum 20% of the total available grant will be allocated for Area
+												3 which equates to €1,800 max. where eligible for full grant.
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 3 Activity 1</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 3 Activity 2</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+
+
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12">
+							<section class="card card-collapsed mb-4">
+								<header class="card-header">
+									<div class="card-actions">
+										<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+										<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+									</div>
+									<h2 class="card-title">Area 3 Activity 3</h2>
+								</header>
+								<div class="card-body">
+									<form class="form-horizontal form-bordered mb-3" method="get">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Support Activity:</label>
+											<div class="col-lg-8">
+												<select class="form-control mb-3 placeholder">
+													<option value="">Select From Dropdown(can input other if needed)</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered By:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Delivered Dates:</label>
+											<div class="col-lg-4">
+												<div class="input-daterange input-group" data-plugin-datepicker>
+														<span class="input-group-prepend">
+															<span class="input-group-text">
+																<i class="fas fa-calendar-alt"></i>
+															</span>
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left" name="start" data-plugin-masked-input data-input-mask="99/99/9999">
+													<span class="input-group-text border-left-0 border-right-0 rounded-0">
+															-to-
+														</span>
+													<input value="___/___/___" type="text" class="form-control text-left"  name="end" data-plugin-masked-input data-input-mask="99/99/9999">
+												</div>
+											</div>
+											<label class="col-lg-2 control-label text-lg-right pt-2">Number of sessions:</label>
+											<div class="col-lg-2">
+												<input type="text" value="" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 control-label text-lg-right pt-2">Professional Qualifications:</label>
+											<div class="col-lg-8">
+												<input type="text" value=""  class="form-control">
+											</div>
+										</div>
+										<div></div>
+									</form>
+									<div class="form-bordered">
+										<div class="form-group row mb-3">
+											<label class="col-lg-2 control-label text-lg-right pt-2 ">Upload Qualifications:</label>
+											<div class="col-lg-8">
+												<form action="/upload" class="dropzone dz-square" id="dropzone-example"></form>
+											</div>
+										</div>
+										<div></div>
+										<form class="form-horizontal form-bordered mb-3" method="get">
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Reasons For Applying:</label>
+												<div class="col-lg-8">
+													<textarea class="form-control" rows="3" data-plugin-maxlength maxlength="140"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Cost Per Session:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+												<label class="col-lg-2 control-label text-lg-right pt-2" for="inputReadOnly">Total Cost:</label>
+												<div class="col-lg-3">
+													<input type="text" value="€"  class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-lg-12 mt-n4 mb-4">
+							<div class="card-footer text-center">
+								<button type="button" class="mb-3 mt-1 mr-1 btn btn-lg btn-primary">Add +</button>
+								<div class="row text-left mb-3">
+									<label class="col-lg-2 control-label text-lg-right pt-2">Total Cost Requested For Area 3:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+									<label class="col-lg-2 control-label text-lg-right pt-2">Threshold:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€00.00" class="form-control" readonly="readonly">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row text-left">
+						<div class="col-lg-12">
+							<section class="card-body">
+								<div class="row mb-3">
+									<div class="col-lg-12">
+										<p class="pt-2 font-weight-bold">Summary</p>
+									</div>
+									<label class="col-lg-2 control-label  pt-2">Total Cost Requested For Area 1:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-lg-2 control-label  pt-2">Total Cost Requested For Area 2:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+								</div>
+								<div class="row form-bordered">
+									<div class="col-lg-12">
+										<div class="form-group row">
+											<label class="col-lg-2 control-label  pt-2">Total Cost Requested For Area 3:</label>
+											<div class="col-lg-3">
+												<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+											</div>
+										</div>
+										<div></div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-lg-2 control-label font-weight-bold  pt-2">Total Grant Cost Requested:</label>
+									<div class="col-lg-3">
+										<input type="text" value="€ Read Only (Calculated from this Form)" class="form-control" readonly="readonly">
+									</div>
+									<span class="col-lg-2 control-label  pt-2">Threshold: €00.00</span>
+								</div>
+							</section>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<section class="card-body">
+								<div class="row">
+									<div class="col-lg-8 mb-5">
+										<p class="font-weight-bold">Name of Country Board</p>
+										<p>
+											We hereby agree that the above areas of support are required for the current year
+											for our first Adult County Team and the funding allocated through this grant scheme will
+											be designated solely for this purpose.
+											We also agree that the information provided is correct and applicable to our team.
+										</p>
+										<p>
+											We understand that we can change our application throughout the year if
+											deemed necessary by the team. Should any item or personnel change we understand
+											it is essential to get prior approval to update the grant application as the most
+											up to date submission will be utilised for final payments.
+											Any re-submission will be signed by all three parties again to show agreement.
+										</p>
+										<p class="font-weight-bold">
+											We confirm that the grant amount applied for in 2019 is €
+											<span class="value-amount">______</span>
+										</p>
+									</div>
+									<div class="col-lg-8">
+										<div class="row">
+											<h4 class="col-lg-12 mb5 font-weight-bold">Signatures</h4>
+											<label class="col-lg-3 control-label text-sm-right pt-2 font-weight-bold">County Board Secretary:</label>
+											<div class="col-lg-9  pt-2 mb-4">
+												<div class="checkbox-custom chekbox-primary">
+													<input id="signature" value="" type="checkbox">
+													<label class="pos-checkbox" for="signature">
+														I have read and comply with the grant scheme eligibility criteria and fully
+														adhere to the requirements set out in this application
+														form and the
+														<a href="#">financial procedures governing the grant scheme</a>
+													</label>
+												</div>
+											</div>
+											<label class="col-lg-3 control-label text-sm-right pt-2 font-weight-bold">WGPA Player Representative:</label>
+											<div class="col-lg-9  pt-2 mb-4">
+												<div class="checkbox-custom chekbox-primary">
+													<input id="signature1" value="" type="checkbox">
+													<label class="pos-checkbox" for="signature1">
+														I have read and comply with the grant scheme eligibility criteria and
+														fully adhere to the requirements set out in this application
+														form and the
+														<a href="#">financial procedures governing the grant scheme</a>
+													</label>
+												</div>
+											</div>
+											<label class="col-lg-3 control-label text-sm-right pt-2 font-weight-bold">Team Manager:</label>
+											<div class="col-lg-9  pt-2 mb-4">
+												<div class="checkbox-custom chekbox-primary">
+													<input id="signature2" value="" type="checkbox">
+													<label class="pos-checkbox" for="signature2">
+														I have read and comply with the grant scheme eligibility criteria and
+														fully adhere to the requirements set out in this application
+														form and the
+														<a href="#">financial procedures governing the grant scheme</a>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="text-center">
+								<button type="button" class="mb-1 mt-1 mr-1 btn btn-lg btn-primary">Submit Application</button>
+							</div>
 						</div>
 					</div>
 
@@ -1304,6 +2263,7 @@
 		<script src="vendor/nanoscroller/nanoscroller.js"></script>
 		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
 		<script src="vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		<script src="vendor/dropzone/dropzone.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
