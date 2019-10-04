@@ -7,6 +7,9 @@
 $ftc-gray: #CCC;
 $ftc-gray-darken: #4F4F4F;
 $ftc-blue: #0088cc;
+$ftc-black-light: #212529;
+
+$bgc-green: #82BE52;
 
 html {
   .wizard-progress.wizard-progress-lg {
@@ -52,4 +55,49 @@ html {
     }
   }
 
+}
+
+table {
+  .fa-upload {
+    color: $ftc-black-light;
+  }
+}
+
+.group-icon {
+  > * {
+    margin: 5px 10px;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.fz-large {
+  font-size: rem-calc(20);
+}
+
+html,
+html.dark {
+  .wizard-progress {
+    .steps-progress {
+      &.completed {
+        .progress-indicator {
+          background: $bgc-green;
+        }
+      }
+    }
+  }
+}
+
+.custom-alert {
+  width: 300px;
+}
+.pos-right {
+  right: 0;
+}
+.pos-left {
+  left: 0;
 }
