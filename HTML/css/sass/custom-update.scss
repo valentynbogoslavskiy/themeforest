@@ -10,6 +10,7 @@ $ftc-blue: #0088cc;
 $ftc-black-light: #212529;
 
 $bgc-green: #82BE52;
+$bgc-green-light: #e6f2dc;
 
 html {
   .wizard-progress.wizard-progress-lg {
@@ -106,3 +107,22 @@ html.dark {
 .pos-left {
   left: 0;
 }
+ html {
+   .toggle-primary {
+     &.custom {
+       label {
+         border-left-color: $bgc-green;
+       }
+       &.toggle {
+         .active > label {
+           background-color: $bgc-green-light !important;
+           color: $ftc-gray-darken;
+           border-color: $bgc-green;
+           &:before {
+             border-top-color: $ftc-gray-darken;
+           }
+         }
+       }
+     }
+   }
+ }
