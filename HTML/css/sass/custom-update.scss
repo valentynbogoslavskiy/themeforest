@@ -37,6 +37,11 @@ html {
           color: $ftc-blue;
         }
       }
+      &.green-outline {
+        .fa-check {
+          color: $bgc-green;
+        }
+      }
     }
   }
 }
