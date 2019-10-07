@@ -11,38 +11,46 @@ $ftc-black-light: #212529;
 
 $bgc-green: #82BE52;
 $bgc-green-light: #e6f2dc;
+$bgc-red: #EB5757;
 
 html {
-  .wizard-progress.wizard-progress-lg {
-    ul li.small-item {
-      a {
-        padding-top: 20px;
-        font-size: rem-calc(12);
-        span {
-          width: 30px;
-          height: 30px;
-          margin-top: -15px;
-          margin-left: -15px;
-          background-color: white;
-          line-height: 1;
+  .wizard-progress{
+    &.wizard-progress-lg {
+      ul li.small-item {
+        a {
+          padding-top: 20px;
+          font-size: rem-calc(12);
+          span {
+            width: 30px;
+            height: 30px;
+            margin-top: -15px;
+            margin-left: -15px;
+            background-color: white;
+            line-height: 1;
+          }
         }
-      }
-      .fa-check {
-        font-size: rem-calc(14);
-        color: $ftc-gray;
-        vertical-align: 3px;
-        text-indent: 2px;
-      }
-      &.active {
         .fa-check {
-          color: $ftc-blue;
+          font-size: rem-calc(14);
+          color: $ftc-gray;
+          vertical-align: 3px;
+          text-indent: 2px;
+        }
+        &.active {
+          .fa-check {
+            color: $ftc-blue;
+          }
+        }
+        &.green-outline {
+          .fa-check {
+            color: $bgc-green;
+          }
         }
       }
-      &.green-outline {
-        .fa-check {
-          color: $bgc-green;
-        }
-      }
+    }
+    .wizard-steps li.red-outline a span{
+      color: $bgc-red;
+      border-color: $bgc-red;
+      background-color: white;
     }
   }
 }
@@ -107,14 +115,74 @@ html.dark {
 
 .custom-alert {
   width: 300px;
+  display: none;
 }
+
+.alert-active {
+  .custom-alert {
+    display: block;
+  }
+}
+
+.bg-danger {
+  background-color: $bgc-red;
+  color: white;
+  .close {
+    color: white;
+  }
+  .footer-alert {
+    .fas, .far {
+      color: white;
+    }
+  }
+}
+
 .pos-right {
   right: 0;
 }
 .pos-left {
   left: 0;
 }
- html {
+.pos-top {
+  top: 0;
+}
+.pos-outside-right {
+  right: 0;
+  transform: translate(100%, 0);
+}
+
+.show-info {
+  display: block;
+}
+
+.comment-box {
+  background-color: white;
+  width: 300px;
+  text-align: left;
+  z-index: 3;
+  .del {
+    color: inherit;
+  }
+}
+
+.bd-red {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $bgc-red;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+
+}
+
+
+
+html {
    .toggle-primary {
      &.custom {
        label {
