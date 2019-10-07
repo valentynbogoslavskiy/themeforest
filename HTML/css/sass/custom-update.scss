@@ -84,7 +84,14 @@ table {
 .fz-large {
   font-size: rem-calc(20);
 }
-
+.fz-medium {
+  font-size: rem-calc(18);
+}
+.contact-form {
+  a {
+    color: inherit;
+  }
+}
 html,
 html.dark {
   .wizard-progress {
