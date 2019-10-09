@@ -113,7 +113,8 @@ html {
 }
 
 table {
-  .fa-upload {
+  .fa-upload,
+  .delete-row {
     color: $ftc-black-light;
   }
 }
@@ -157,11 +158,21 @@ html.dark {
 .custom-alert {
   width: 300px;
   display: none;
+  z-index: 3;
+  &.width-full {
+    width: 100%;
+  }
 }
 
 .alert-active {
   .custom-alert {
     display: block;
+  }
+}
+
+.alert-danger {
+  p {
+    color: inherit;
   }
 }
 
